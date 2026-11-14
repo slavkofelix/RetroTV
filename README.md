@@ -2,7 +2,22 @@
 
 A freeware VST3 video-displaying instrument plugin for audio DAWs — styled after a 1970s Studio Silver CRT television — by **f+l~x** ([flx.agency](https://felix.sk) / [felix.sk](https://felix.sk)).
 
+![Retro TV VST3 Plugin](docs/screenshot.jpg)
+
 Load any `.mp4`, `.mov`, or `.m4v` video into your DAW (tested in Reason, works in any VST3-compatible DAW), lock picture and stereo audio to your host transport timeline, trim sync down to single frames, and keep a video reference monitor right inside your rack or mixer.
+
+## Download
+
+Grab the prebuilt **macOS (Apple Silicon / `arm64`, macOS 14+)** VST3 plugin from **[GitHub Releases](https://github.com/slavkofelix/RetroTV/releases/latest)**:
+
+1. Download and unzip `RetroTV-v1.0.0-macOS-arm64.zip`.
+2. Copy `RetroTVVideo.vst3` to `~/Library/Audio/Plug-Ins/VST3/`.
+3. Because the build is ad-hoc signed rather than Apple-notarized, clear Gatekeeper quarantine once after copying:
+   ```bash
+   xattr -cr ~/Library/Audio/Plug-Ins/VST3/RetroTVVideo.vst3
+   ```
+
+> Need Intel macOS, Universal binary, or Windows? See [Build from Source](#build-from-source) below.
 
 ---
 
