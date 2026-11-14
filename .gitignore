@@ -1,0 +1,10 @@
+# Build artifacts & IDE files
+build/
+build-*/
+.DS_Store
+*.user
+.vscode/
+.idea/
+
+# Third-party SDK checkout (cloned separately or as submodule)
+third_party/vst3sdk/
